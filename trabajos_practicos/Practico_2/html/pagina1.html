@@ -17,29 +17,40 @@
 
         <nav class="nav-principal">
             <a href="">Registrar Usuario</a>
-            <a href="">Reservar</a>
+            <a href="pagina2.html">Reservar</a>
             <a href="">Ver Reservas Realizadas</a>
-            <a href="">Eliminar-Reserva-Realizada</a>
+            <a href="">Eliminar Reserva</a>
         </nav>
+
 
     </header>
 
     <main class="container-fluid">
-        <form action="pagina2.html" method="get" >
+        <section class="container seccion-main">
+            <form action="pagina2.html" method="get" >
+                <div class="div-formulario">
+                    <label for="origen">Origen</label>
+                    <input type="text" id="origen" name="origen" maxlength="100" ><br><br>
+                </div>
 
-            <label for="origen">Origen</label>
-            <input type="text" id="origen" name="origen" maxlength="100" ><br><br>
+                <div class="div-formulario">
+                    <label for="destino">Destino</label>
+                    <input type="text" id="destino" name="destino" maxlength="100"><br><br>
+                </div>
 
-            <label for="destino">Destino</label>
-            <input type="text" id="destino" name="destino" maxlength="100"><br><br>
+                <div class="div-formulario">
+                    <label for="fecha_vuelo">Fecha_Vuelo</label>
+                    <input type="date" id="fecha_vuelo" name="fecha_vuelo"><br><br>
+                </div>
 
-            <label for="fecha_vuelo">Fecha_Vuelo</label>
-            <input type="date" id="fecha_vuelo" name="fecha_vuelo"><br><br>
+                <div class="div-formulario">
+                    <input type="submit" name="buscar" value="Buscar">
+                    <input type="reset" name="reset" value="Cancelar"><br>
+                </div>
 
-            <input type="submit" name="buscar" value="Buscar">
-            <input type="reset" name="reset" value="Cancelar"><br>
-
-        </form>
+                
+            </form>
+        </section>
 
     </main>
 

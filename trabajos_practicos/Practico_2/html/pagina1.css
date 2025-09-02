@@ -3,6 +3,7 @@
     --blanco: #ffffff;
     --azul-claro: #276fd3;
     --azul-marino: #001F3F;
+    --negro: black;
 }
 
 
@@ -24,9 +25,16 @@ h2 {
     background: var(--azul-claro);
     color:var(--blanco);
     padding: 10px;
-    border: 3px solid var(--blanco);
+    border: 3px ;
     border-radius: 15px;
+    text-decoration: none;
 }
+
+.nav-principal a:hover{
+    background:var(--blanco);
+    color:black;
+}
+
 
 
 
@@ -37,6 +45,85 @@ main {
     color:var(--blanco);
     padding:20px;
 }
+
+.seccion-main{
+    display:flex;
+    background: var(--blanco);
+    color: var(--negro);
+    padding:20px;
+    border-radius: 15px;
+}
+
+
+.seccion-main label {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #2c3e50;            /* Gris oscuro elegante */
+  margin-bottom: 6px;
+  cursor: pointer;
+
+  /* Efecto suave */
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.seccion-main label:hover {
+  color: #3498db;            /* Azul vibrante al pasar el mouse */
+  transform: translateX(4px); /* Se mueve un poquito a la derecha */
+}
+
+.seccion-main label:active {
+  color: #1abc9c;            /* Verde agua cuando haces click */
+  transform: scale(0.98);    /* Mini "click effect" */
+}
+
+
+.seccion-main form {
+    width:100%;
+}
+
+.seccion-main input {
+    margin:10px;
+}
+
+.seccion-main input {
+    display: flex;
+    flex: 1;
+    width:90%;
+    padding: 10px 14px;
+    font-size: 1rem;
+    border: 2px solid var(--nego);
+    border-radius: 8px;
+    background: var(--azul-claro);
+    color: var(--blanco);
+    outline: none;
+
+    transition: all 0.3s ease;
+}
+
+/* Cuando el input recibe foco */
+.seccion-main input:focus {
+    color:var(--negro);
+    border-color: #3498db;       /* Azul vibrante */
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.4);
+    background: var(--blanco);      /* Fondo más limpio */
+}
+
+/* Placeholder más estilizado */
+.seccion-main input::placeholder {
+  color: #999;
+  font-style: italic;
+}
+
+.div-formulario{
+    display:flex;
+    justify-content: start;
+    align-items: center;
+    flex-flow: row wrap;
+
+}
+
+
 
 
 
