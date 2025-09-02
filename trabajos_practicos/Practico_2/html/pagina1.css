@@ -1,0 +1,50 @@
+:root {
+    --azul-Oscuro: #003366;
+    --blanco: #ffffff;
+    --azul-claro: #276fd3;
+    --azul-marino: #001F3F;
+}
+
+
+header {
+    background: var(--azul-Oscuro);
+    color: var(--blanco);
+    padding: 20px;
+}
+
+h1 {
+    font-size: 80px;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+.nav-principal a {
+    background: var(--azul-claro);
+    color:var(--blanco);
+    padding: 10px;
+    border: 3px solid var(--blanco);
+    border-radius: 15px;
+}
+
+
+
+
+
+main {
+    background: var(--azul-claro);
+    color:var(--blanco);
+    padding:20px;
+}
+
+
+
+
+
+
+footer {
+    background: var(--azul-Oscuro);
+    color: var(--blanco);
+    padding:20px;
+}
