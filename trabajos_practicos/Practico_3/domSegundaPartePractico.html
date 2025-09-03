@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Funciones</title>
+</head>
+<body>
+      <h1 id="tituloPrincipal" >Aprendiendo Javascript</h1>
+      <nav>
+            <ul id="listaCursosDisponibles">
+                  <li><a href="#" class="enlace">Horarios del Curso</a></li>
+                  <li><a href="#" class="enlace">Costo</a></li>
+                  <li><a href="#" class="enlace">Lugar de Realizacion</a></li>
+            </ul>
+      </nav>
+
+      <label>Nombre del Curso :</label> <input type="text" name="nombreCurso" id="nombreCurso" />
+      <label>Fecha desde:</label> <input type="date" id="fechaDesde"/>
+
+      <label>Fecha hasta:</label> <input type="date" id="fechaHasta" />
+      <label>Cantidad de horas:</label> <input type="text" id="horas" /><br>
+      <label>Expositores *</label>
+      <select name="cantidad"  id="cantidad" >
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+      </select>
+      <div  id="myDIV">
+                        
+      </div>
+            
+      <button id="agregarCurso" class="boton">Agregar Curso</button><br>
+      <button id="nuevoCurso" class="boton">Nuevo Curso</button><br>
+
+      <section id="curso">
+            <h1>Cursos Agregados</h1>
+            <ul id="listaCursos"></ul>
+      </section>
+
+      <label>Cupo Minimo :</label> <input type="number" id="cupoMinimo" name="cupoMinimo" />
+      <label>Cupo Maximo :</label> <input type="number" id="cupoMaximo" name="cupoMaximo" onblur="controlCupo()"/>
+            
+      <script src="JS/myScript.js"></script>
+</body>
+</html>
