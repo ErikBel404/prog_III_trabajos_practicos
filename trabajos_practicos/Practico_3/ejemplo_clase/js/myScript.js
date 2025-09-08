@@ -234,34 +234,34 @@ console.log(elemento2);  // Muestra todos los elementos con clase "boton"
 
 
 /********************Crear Elementos *****************/
-let enlace=document.createElement("a");
+/*let enlace=document.createElement("a");*/
 
 /*Creamos la clase*/
 
-enlace.className="enlace"
 
+/*enlace.className="enlace"*/
 /*Agregamos un id*/
 
-enlace.id="nuevoId";
 
+/*enlace.id="nuevoId";*/
 
 /*Le agregamos atributos*/
 
-enlace.setAttribute("href","#");
 
+/*enlace.setAttribute("href","#");*/
 
 /*Agregamos el Texto */
 
-enlace.appendChild(document.createTextNode("Nuevo Enlace"));
 
+/*enlace.appendChild(document.createTextNode("Nuevo Enlace"));*/
 
 /*Agregamos al html */
 
-let li=document.createElement("li");
+
+/*let li=document.createElement("li");
 li.appendChild(enlace);
 
 document.getElementById("listaCursosDisponibles").appendChild(li);
 
-console.log(enlace);
-
+console.log(enlace);*/
 
