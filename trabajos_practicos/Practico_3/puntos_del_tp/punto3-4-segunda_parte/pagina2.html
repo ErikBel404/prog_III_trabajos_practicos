@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informacion General</title>
+    <link rel="stylesheet" href="pagina1.css">
+</head>
+<body>
+    <header>
+        <h1>Informacion del General</h1>
+    </header>
+
+    <main class="main-2">
+        <section class="container seccion-main seccion-main-2">
+            <form action="pagina2.html" method="get">
+            
+            
+                <h2>Informacion del Vuelo</h2>
+            
+                <div class="div-formulario">
+                    <label for="origen" >Origen</label>
+                    <input type="text" id="origen" name="origen" disabled><br><br>
+                </div>
+
+                <div class="div-formulario">
+                    <label for="destino">destino</label>
+                    <input type="text" id="destino" name="destino" disabled><br><br>
+                </div>
+
+                <div class="div-formulario">
+                    <label for="fecha_vuelo">fecha_vuelo</label>
+                    <input type="date" id="fecha_vuelo" name="fecha_vuelo" disabled><br><br>
+                </div>
+
+                <div class="div-formulario">
+                    <label for="hs_vuelo">hora_vuelo</label>
+                    <input type="time" id="hs_vuelo" name="hs_vuelo" disabled>
+                </div>
+            
+           
+                <h2>Datos del Pasajero</h2>
+                
+                <div class="div-formulario">
+                    <label for="clase"> Clase</label>
+                    <select name="clase" id="clase">
+                        <option value="Ejecutiva">Ejecutiva</option>
+                        <option value="Economica"> economica</option>
+                    </select><br><br>
+                </div>
+
+                <div class="div-formulario">
+                    <label for="cant_psj">Cantidad de Pasajes</label>
+                    <input type="number" name="cant_psj" id="cant_psj" min="1" max="50" required ><br><br>
+                </div>
+
+                <div class="div-formulario">
+                    <label for="ubicacion">Ubicacion de pago</label>
+                    <select name="ubicacion" id="ubicacion">
+                        <option value="ventanilla">Ventanilla</option>
+                        <option value="centro">Centro</option>
+                        <option value="pasillo">Pasillo</option>
+                    </select>
+                </div>
+                <br><br>
+
+                <div class="div-formulario">
+                    <label for="asiento">Asiento</label>
+                    <input type="number" name="asiento" id="asiento" min="1" max="50" required><br><br>
+                </div>
+
+                <div class="div-formulario">
+                    <label for="nombre_completo">Nombre Completo</label>
+                    <input type="text" name="nombre" id="nombre_completo" maxlength="100" required><br><br>
+                </div>
+
+                <div class="div-formulario">
+                    <label for="dni">DNI</label>
+                    <input type="text" name="dni" id="dni" maxlength="8" required><br><br>
+                </div>
+
+                <div class="div-formulario">
+                    <label for="fecha_nac">Fecha de Nacimiento</label>
+                    <input type="date" name="fech_nac" id="fecha_nac"><br><br>
+                </div>
+
+                <div class="div-formulario div-formulario-sexo">
+                    <label >Sexo</label><br>
+                    <input type="radio" name="sexo" id="masculino" value="Masculino">
+                    <label for="masculino">Masculino</label>
+
+                    <input type="radio" name="sexo" id="femenino" value="Femenino">
+                    <label for="femenino">Femenino</label>
+                </div>
+            
+    
+                <div class="div-formulario">
+                    <input type="submit" name="buscar" value="Buscar">
+                    <input type="reset" name="reset" value="Cancelar"><br>
+                </div>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>"Sitio Oficial de Compañía Argentina-2025</p>
+    </footer>
+    
+</body>
+</html>
