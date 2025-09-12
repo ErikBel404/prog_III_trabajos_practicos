@@ -39,14 +39,14 @@
                 </div>
             
            
-                <h2>Datos del Pasajero</h2>
+                <h2>Datos de Pasajeros</h2>
 
                 <div class="div-formulario">
                     <label for="cant_psj">Cantidad de Pasajes</label>
                     <input type="number" name="cant_psj" id="cant_psj" min="1" max="50" required ><br><br>
                 </div>
                 
-                <div id="contenedor_original">
+                <template id="contenedor_original">
                     <div class="div-formulario">
                         <label for="clase"> Clase</label>
                         <select name="clase" id="clase">
@@ -87,12 +87,12 @@
                         <label for="femenino">Femenino</label>
                     </div>
                     <br><br>
-                </div>
+                </template>
 
                 <div id="contenedor_clonado"></div>
 
                 <div class="div-formulario">
-                    <input type="submit" name="buscar" value="Buscar">
+                    <input type="submit" name="buscar" value="Reservar">
                     <input type="reset" name="reset" value="Cancelar"><br>
                 </div>
 

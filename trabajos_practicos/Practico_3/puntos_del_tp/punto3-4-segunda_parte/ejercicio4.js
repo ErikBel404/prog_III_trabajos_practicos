@@ -4,16 +4,22 @@ document.addEventListener ("DOMContentLoaded", function() {
     const input_cant_psj = document.getElementById ("cant_psj");
     const contenedor_original = document.getElementById ("contenedor_original");
     const contenedor_clonado = document.getElementById ("contenedor_clonado");
-    const clone = contenedor_original.cloneNode (true);
+    
 
     input_cant_psj.addEventListener ("change", function() {
 
-        alert ("hola jajajja");
+        contenedor_clonado.innerHTML = "";
 
-        const cant_psj = input_cant_psj.value;
+        const cant_psj = parseInt(input_cant_psj.value) || 0;
+        const clone = contenedor_original.content.cloneNode (true);
 
         for (let i = 0; i < cant_psj; i++) {
+            const titululo = document.createElement ("h2");
+            const contenido = document.createTextNode ("Pasajero"+ (i+1));
+            titululo.appendChild (contenido);
+            contenedor_clonado.appendChild (titululo);
 
+            const clone = contenedor_original.content.cloneNode (true);
             contenedor_clonado.appendChild (clone);
 
         }
