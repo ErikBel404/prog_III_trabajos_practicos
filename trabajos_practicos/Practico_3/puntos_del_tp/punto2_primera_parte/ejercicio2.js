@@ -58,10 +58,10 @@ for (let index = 0; index < sistemaReservas1.listaReservas.length; index++) {
     reservaAuxiliar = sistemaReservas1.listaReservas[index];
 
     for (let x in reservaAuxiliar){
-        let columna = document.createElement ("td");/*por cada atributo especifico, creo una columna*/
+        let celda = document.createElement ("td");/*por cada atributo especifico, creo una celda*/
         let contenido= document.createTextNode (reservaAuxiliar[x]);
-        columna.appendChild (contenido);
-        fila.appendChild (columna);
+        celda.appendChild (contenido);
+        fila.appendChild (celda);
         /*despues solo es cuestion de conectar los nodos jajajajaja*/
     }
 
