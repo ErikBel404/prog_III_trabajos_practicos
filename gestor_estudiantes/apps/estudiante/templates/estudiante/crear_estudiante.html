@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Crear Estudiante</title>
+</head>
+<body>
+    <h1>Ingresar nuevo estudiante</h1>
+
+
+    {% if mensaje %}
+        <p style="color: green;">{{ mensaje }}</p>
+    {% endif %}
+
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Guardar</button>
+    </form>
+
+</body>
+</html>
