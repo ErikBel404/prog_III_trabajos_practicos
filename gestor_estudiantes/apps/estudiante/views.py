@@ -6,7 +6,7 @@ from tkinter import messagebox
 def crear_estudiante(request):
     mensaje = ""
     if request.method == 'POST':
-        form = EstudianteForm(request.POST)
+        form = EstudianteForm(request.POST, request.FILES)
         if form.is_valid():
             form.save()
             mensaje = "Estudiante registrado correctamente."
