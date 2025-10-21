@@ -15,3 +15,6 @@ class EstudianteForm(forms.ModelForm):
         widgets = {
             'cursos': forms.CheckboxSelectMultiple(),  # para seleccionar varios cursos
         }
+
+
+
