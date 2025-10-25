@@ -10,7 +10,7 @@ def crear_estudiante(request):
         if form.is_valid():
             form.save()
             mensaje = "Estudiante registrado correctamente."
-            form = EstudianteForm()  # Limpiar el formulario después de guardar
+            form = EstudianteForm()  
     else:
         form = EstudianteForm()
 
